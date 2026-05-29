@@ -19,6 +19,7 @@ export default function DashboardLayout({
             { href: "/dashboard/calendario", label: "Calendario" },
             { href: "/dashboard/inbox", label: "Inbox" },
             { href: "/dashboard/metricas", label: "Métricas" },
+            { href: "/dashboard/configuracion", label: "Configuración" },
           ].map((item) => (
             <a
               key={item.href}
