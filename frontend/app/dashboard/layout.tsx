@@ -8,12 +8,9 @@ export default function DashboardLayout({
   return (
     <div className="flex min-h-screen bg-gray-50">
       <aside className="w-64 bg-black shadow-lg border-r-4 border-brand">
-        <div className="p-6 border-b border-gray-800 flex items-center gap-3">
-          <Image src="/logo.png" alt="Diavolo" width={40} height={40} className="rounded" />
-          <div>
-            <h2 className="text-xl font-bold text-brand">Diavolo</h2>
-            <p className="text-xs text-gray-500">Social Manager</p>
-          </div>
+        <div className="p-4 border-b border-gray-800">
+          <Image src="/logo.png" alt="Diavolo" width={200} height={60} className="w-full h-auto" priority />
+          <p className="text-xs text-gray-400 mt-2 text-center">Social Manager</p>
         </div>
         <nav className="mt-4 space-y-1 px-4">
           {[
