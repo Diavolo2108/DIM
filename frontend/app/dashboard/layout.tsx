@@ -5,13 +5,13 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="flex min-h-screen bg-gray-100">
-      <aside className="w-64 bg-white shadow-sm">
-        <div className="p-6">
-          <h2 className="text-lg font-bold text-gray-900">Diavolo</h2>
-          <p className="text-xs text-gray-400">Instagram Manager</p>
+    <div className="flex min-h-screen bg-gray-50">
+      <aside className="w-64 bg-black shadow-lg border-r-4 border-brand">
+        <div className="p-6 border-b border-gray-800">
+          <h2 className="text-2xl font-bold text-brand">Diavolo</h2>
+          <p className="text-xs text-gray-500 mt-1">Social Manager</p>
         </div>
-        <nav className="mt-2 space-y-1 px-4">
+        <nav className="mt-4 space-y-1 px-4">
           {[
             { href: "/dashboard/clientes", label: "Clientes" },
             { href: "/dashboard/campanas", label: "Campañas" },
@@ -24,7 +24,7 @@ export default function DashboardLayout({
             <a
               key={item.href}
               href={item.href}
-              className="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-gray-100"
+              className="block rounded-lg px-3 py-2 text-sm text-gray-300 hover:bg-gray-900 hover:text-brand transition-colors duration-200"
             >
               {item.label}
             </a>
