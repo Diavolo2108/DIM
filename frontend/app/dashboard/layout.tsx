@@ -1,4 +1,5 @@
-// Sprint 1-3: se agrega verificacion de sesion y sidebar de navegacion
+import Image from "next/image";
+
 export default function DashboardLayout({
   children,
 }: {
@@ -7,9 +8,12 @@ export default function DashboardLayout({
   return (
     <div className="flex min-h-screen bg-gray-50">
       <aside className="w-64 bg-black shadow-lg border-r-4 border-brand">
-        <div className="p-6 border-b border-gray-800">
-          <h2 className="text-2xl font-bold text-brand">Diavolo</h2>
-          <p className="text-xs text-gray-500 mt-1">Social Manager</p>
+        <div className="p-6 border-b border-gray-800 flex items-center gap-3">
+          <Image src="/logo.png" alt="Diavolo" width={40} height={40} className="rounded" />
+          <div>
+            <h2 className="text-xl font-bold text-brand">Diavolo</h2>
+            <p className="text-xs text-gray-500">Social Manager</p>
+          </div>
         </div>
         <nav className="mt-4 space-y-1 px-4">
           {[
